@@ -1,0 +1,161 @@
+/** {
+ outline: solid 1px purple; 
+}*/
+:root {
+padding: 0;
+margin: 0;
+font-size: 16px; 
+}
+
+body {
+display:flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+width: 100%;
+}
+
+.bg {
+width: 100%;
+height: 100vh;
+position: absolute;
+z-index: -1;
+}
+
+.container { 
+border-radius: 3%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 80%;
+height: 80%;
+background-color: rgba(255, 255, 255, 0.7);
+box-shadow: -4px 4px 5px rgb(255, 255, 255);
+z-index: 2;
+}
+
+.logo {
+position: absolute;
+top: 10px;
+left: 10px;
+width: 50px;
+height: 50px;
+}
+
+.container__input {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100%;
+width: 100%;
+border-radius: 5%;
+overflow: hidden;
+color: black;
+}
+
+.input__form {
+margin-top: 5px;;
+height: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.tittle {
+font-size: 1.7rem;
+font-weight: 900;
+text-decoration: underline;
+}
+
+.input__form h2 {
+color:black;
+font-size: 1rem;
+text-decoration: underline;
+}
+
+.input__form select,button {
+text-align: center;
+margin: 5px;
+width: 80%;
+height: 95%;
+background-color: blanchedalmond;
+}
+
+#currency, #crypto {
+color :rgb(210, 210, 210);
+background-color: rgb(50, 50, 50);
+height: 42px;
+border: solid 2px rgb(187, 0, 0);
+}
+
+button {
+height: 42px;
+background-color: rgb(122, 1, 1);
+border-radius: 15%;
+width: 50%;
+color: rgb(210, 210, 210);
+}
+
+button:hover {
+transform: scale(1.03);
+border: solid 1px red;
+transition: 0.2s;
+color: white;
+}
+
+.result { 
+font-size: 0.7rem; 
+}
+
+.obtained_info {
+position:relative;
+bottom: 70px;
+right: 54px;
+font-family: Arial, Helvetica, sans-serif;
+border-radius: 5%;
+background-color: rgba(255, 255, 255, 0.5);
+margin: 2px;
+padding: 5px;
+padding-left: 20px;
+width: 120%;
+border: solid 3px purple;
+margin-top: 50px;
+margin-left: 5px;
+margin-bottom: 420px;
+color: black;
+box-shadow: 0px 1px 5px rgb(221, 221, 221);
+text-decoration: underline rgb(60, 60, 60) 2px; 
+transform: scale(0.7);
+font-size: 1.5rem;
+}
+
+.obtained_info h4 { 
+font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+.container__foot {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+width: 100%;
+text-align: center;
+}
+
+.foot__line {
+width: 80%;
+height: 1px;
+background-color: black;
+}
+
+.foot__quote {
+  font-family: cursive;
+}
+
+.error {
+  color: red;
+  font-size: 2rem;
+}

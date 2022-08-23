@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Crypto eye</title>
+</head>
+<body>
+  <img class="bg" src="assets/galaxia.jpg" alt="">    
+<div id="container" class="container">  
+<div id="data__container" class="container__input">
+    <img class="logo" src="assets/logo.png" alt="">
+    <h1 class="tittle">Crypto eye</h1>
+    <form action="#" id="input" class="input__form">      
+      <h2 class="form__instructions">Select currency</h2>      
+      <select name="currency" id="currency" class="form__currencies">     
+        <option value="">Currencies</option>
+        <option value="CLP">Chilean pesos</option>
+        <option value="GBP">Great Britain pound</option>
+        <option value="EUR">Euro</option>
+        <option value="USD">Dolar</option>     
+      </select>
+      <select name="Crypto" id="crypto" class="form__cryptos"> 
+        <option value="0">Press button</option>                              
+      </select>
+      <button class="submit">Get crypto list</button>
+    </form>
+    <div id="result" class="container__output screen"></div>
+  </div> 
+  <footer class="container__foot">
+    <div class="foot__line"></div>
+    <h4 class="foot__quote">Keep calm and stay informed</h4>
+  </footer>
+</div>  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
